@@ -1,6 +1,6 @@
 import React from 'react';
-import {listData} from '../../data/dataStore.js';
-import styles from './Card.scss'
+
+import styles from './Card.scss';
 
 class Card extends React.Component {
   
@@ -10,7 +10,7 @@ class Card extends React.Component {
       <section>
         <div className={styles.component}>{this.props.title}</div>
       </section>
-    )
+    );
   }
 }
 export default Card;

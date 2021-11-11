@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './App.scss';
 import List from '../List/List.js';
 import {pageContents, listData} from '../../data/dataStore';
-import Card from '../Card/Card.js';
+
 
 class App extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class App extends React.Component {
         <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
         <List {...listData} />
       </main>
-    )
+    );
   }
 }
 
