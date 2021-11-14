@@ -6,6 +6,11 @@ import App from './components/App/AppContainer';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 
+let port = process.env.PORT;
+if (port == null || port == '') {
+  port = 8000;
+}
+App.listen(port);
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('app'));
 
