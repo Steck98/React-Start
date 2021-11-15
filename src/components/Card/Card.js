@@ -1,17 +1,11 @@
 import React from 'react';
-
 import styles from './Card.scss';
 
-class Card extends React.Component {
+const Card = props=> (
+  <section>
+    <div className={styles.component}>{props.title}</div>
+  </section>
+);
   
-  
-  render() {
-    const {title}= this.props;
-    return (
-      <section>
-        <div className={styles.component}>{title}</div>
-      </section>
-    );
-  }
-}
+
 export default Card;

@@ -6,32 +6,26 @@ import { settings } from '../../data/dataStore';
 import Creator from '../Creator/Creator.js';
 import Icon from '../Icon/Icon.js';
 
-class Column extends React.Component {
-  static defaultProps = {
-    icon: settings.defaultColumnIcon,
-  };
-  
-  static propTypes = {
-    title: PropTypes.node.isRequired,
-    cards: PropTypes.array.isRequired,
-    addCard: PropTypes.func,
-  };
- 
-  render() {
-    const {title, icon, cards, addCard} = this.props;
-    return (
-      <section className={styles.component}>
-        <h3 className={styles.title}>{title}<span className={styles.icon} ><Icon name={icon}/></span></h3>
-         
-        {cards.map(cardData => (
-          <Card key={cardData.id} {...cardData} />
-        ))} 
-  
-        <Creator text={settings.cardCreatorText} action={addCard}/> 
-        
-      </section>
-    );
-  }
-}
+const Column = props => (
+    
+    
+  <section className={styles.component}>
+    <h3 className={styles.title}>{props.title}<span className={styles.icon} ><Icon name={props.icon}/></span></h3>       
+    {props.cards.map(cardData => (
+      <Card key={cardData.id} {...cardData} />
+    ))} 
+    <Creator text={settings.cardCreatorText} action={props.addCard}/> 
+  </section>
+);
+Column.defaultProps = {
+  icon: settings.defaultColumnIcon, //@To Do => Fix default column icon not showing up.
+};
+Column.propTypes = {
+  title: PropTypes.node.isRequired,
+  cards: PropTypes.array.isRequired,
+  addCard: PropTypes.func,
+};
+
+
 
 export default Column;
