@@ -9,8 +9,6 @@ import Creator from '../Creator/Creator.js';
 
 
 class List extends React.Component {
-  
-  
   static propTypes = {
     title: PropTypes.node.isRequired,
     description: PropTypes.node,
