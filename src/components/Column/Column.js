@@ -18,7 +18,7 @@ const Column = props => (
   </section>
 );
 Column.defaultProps = {
-  icon: settings.defaultColumnIcon, //@To Do => Fix default column icon not showing up.
+  icon: settings.defaultColumnIcon, 
 };
 Column.propTypes = {
   title: PropTypes.node.isRequired,
