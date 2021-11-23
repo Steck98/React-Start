@@ -1,11 +1,12 @@
 import shortid from 'shortid';
 
 // selectors
-export const getList = ({list})=>list;
+export const getList = ({lists})=>lists;
+
 
 // action name creator
-const reducerName = 'list';
-const createActionName = name => `app/${reducerName}/${name}`;
+const reducerName = 'lists';
+const createActionName = name => `app/${reducerName}/${name}`;  // app/lists/ADD_LIST
 
 // action types
 export const ADD_LIST = createActionName('ADD_LIST');

@@ -20,7 +20,7 @@ const reducers = {
   columns: columnsReducer,
   cards: cardsReducer,
   searchString: searchStringReducer,
-  list: listReducer,
+  lists: listReducer,
 };
 
 // add blank reducers for initial state properties without reducers
