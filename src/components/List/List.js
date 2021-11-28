@@ -23,6 +23,7 @@ const List = props => (
     <div className={styles.creator}>
       <Creator text={settings.columnCreatorText} action={props.addColumn}/>
     </div>
+    
   </section>
     
   

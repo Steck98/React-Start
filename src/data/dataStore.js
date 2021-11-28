@@ -7,6 +7,17 @@ export const settings = {
     buttonCancel: 'Cancel',
     defaultText: 'Add new item',
   },
+  header:{
+    icon:'cat',
+  },
+  infoSubPage:{
+    title:'About Me',
+    text:'Lets talk A Littlebit about Lorem ipsum donnuts',
+  },
+  faqSubPage:{
+    title:'Any Questions ?',
+    text:'Section Under Development',
+  },
   search: {
     defaultText: 'Search...',
     icon: 'search',
@@ -22,6 +33,8 @@ export const pageContents = {
 
 export const listData = {
   title: 'Things to do <sup>soon!</sup>',
+  
+  
   description: 'Interesting things I want to check out!',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   columns: [
